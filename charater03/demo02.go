@@ -6,11 +6,11 @@ import (
 
 type Person struct {
 	name string
-	age int
+	age  int
 }
 
 func main() {
-	p := Person{"hh",1}
+	p := Person{"hh", 1}
 	point := &p
 	editName(point)
 	fmt.Println(point.name)

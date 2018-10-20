@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 const (
-	MAN = 1
+	MAN   = 1
 	WOMAN = 0
-	WHO = iota
+	WHO   = iota
 )
 
-func main (){
+func main() {
 	fmt.Println(MAN, WOMAN, WHO)
 }

@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	 "time"
+	"time"
 )
 
 func main() {
 	result := 0
 
-	for i := 1 ;i <= 10 ; i++ {
+	for i := 1; i <= 10; i++ {
 		result += i
 	}
 
@@ -23,11 +23,11 @@ func main() {
 
 	for {
 		seed := int64(result)
-		rand.Seed(seed+time.Now().Unix())
+		rand.Seed(seed + time.Now().Unix())
 		l = rand.Intn(100)
 		result += l
 		fmt.Println(l)
-		if kk := result;l == 5 {
+		if kk := result; l == 5 {
 			fmt.Println("kk is", kk)
 			break
 		}
